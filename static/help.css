@@ -1,0 +1,72 @@
+/*heading design*/
+.heading{
+    width: 1000px;
+    height: 100px;
+    margin:0 auto;
+
+
+
+    background-image: -webkit-linear-gradient(left,blue,#66ffff 10%,#cc00ff 20%,#CC00CC 30%, #CCCCFF 40%, #00FFFF 50%,#CCCCFF 60%,#CC00CC 70%,#CC00FF 80%,#66FFFF 90%,blue 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-background-size: 200% 100%;
+    -webkit-animation: masked-animation 4s linear infinite;
+    font-size: 50px; }
+@keyframes masked-animation {
+    0% {
+        background-position: 0  0;
+    }
+    100% {
+        background-position: -100%  0;
+    }
+}
+/*background*/
+body {
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container {
+	width: 100%;
+	position: absolute;
+	top: 5%;
+	text-align: center;
+}
+.header{
+    margin-top: -30px;
+    font-size: 35px;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+/*content of game rules*/
+.instruction{
+    font-size: 20px;
+	margin-right: 300px;
+	margin-left: 300px;
+}
+#back{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width:110px;
+    height:50px;
+    font-size: 40px;
+}

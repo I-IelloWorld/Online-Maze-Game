@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/main_page.css">
+</head>
+<body>
+<!--situation of identity -->
+
+    <!--main list-->
+    <div class="navigation">
+         <div class="identity" >
+        {% if islogin %}
+            <a ><span class="name"></span> {{ username }}</a>
+            <a href="/logout">log out</a>
+        {% else %}
+            <a href="/register"><span class="register"></span> Register</a>
+        {% endif %}
+
+        </div>
+        <br>
+
+
+        <ul>
+            <li><a href="/single" data-text="SINGLE">SINGLE PLAYER</a></li>
+            <li><a href="/versus" data-text="VERSUS">VERSUS MODE</a></li>
+            <li><a href="/rank_list" data-text="RANK">RANK LIST</a></li>
+            <li><a href="/help" data-text="HELP">HELP</a></li>
+        </ul>
+    </div>
+
+
+</body>
+</html>
